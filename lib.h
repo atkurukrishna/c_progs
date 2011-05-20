@@ -20,4 +20,13 @@ int *generate_random_array_of_size_i(int i) {
   }
   return array;
 }
- 
+
+int *copy_arrays(int *array, int i) {
+  int p = 0;
+  int *array2;
+  array2 = (int *)malloc(sizeof(int) * i);
+  for (; p < i; p++) {
+    *(array2 + p) = *(array + p);
+  }
+  return array2;
+}
