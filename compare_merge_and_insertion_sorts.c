@@ -15,11 +15,6 @@ int main() {
   for(; i < 1000; i++) {
     array = generate_random_array_of_size_i(i);
     array2 = copy_arrays(array, i);
-/*
-    for (j = 0; j < i; j++) {
-      printf("%d ", *(array2 + j));
-    }
-*/
     printf("\n");
 
     start = clock();
