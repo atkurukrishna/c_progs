@@ -20,7 +20,6 @@ ArrayParams find_overlap_array(int *array, int start, int mid, int end) {
   int right_max_index = mid + 1;
   int right_max_value = *(array + right_max_index);
   int current_value = left_max_value;
-  int return_array[3];
   ArrayParams overlap_params;
 
   while (j >= start && left_max_value >= current_value) {
@@ -51,7 +50,6 @@ ArrayParams find_max_sub_array(int *array, int start, int end) {
   ArrayParams left_array;
   ArrayParams right_array;
   ArrayParams mid_array;
-
   
   if (start < end) {
     left_array = find_max_sub_array(array, start, mid_point);
